@@ -1,0 +1,44 @@
+# Terraform local state - NEVER COMMIT
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Terraform working directory
+.terraform/
+.terraform.lock.info
+
+# Real Terraform variable files may contain private values
+*.tfvars
+*.tfvars.json
+
+# Real backend config contains private state bucket name
+backend.hcl
+backend*.hcl
+
+# Local override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config files
+.terraformrc
+terraform.rc
+
+# Local generated graph files
+*.dot
+
+# Project documentation/screenshots not for GitHub
+screenshots/
+documentation/
+
+# Local notes
+backend-bucket-name.txt
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
